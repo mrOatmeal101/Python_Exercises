@@ -36,6 +36,12 @@ def in_range(nums, lowest, highest):
     should print: 20 fits 30 fits"""
 
     # YOUR CODE HERE
+    for num in nums:
+        first_num = nums[0]
+        last_num = nums[-1]
+        if first_num < lowest and last_num > highest:
+            return f"{lowest} fits {highest} fits"
+        
+print(in_range([10, 20, 30, 40, 50], 15, 30))
 
 
-in_range([10, 20, 30, 40, 50], 15, 30)   
