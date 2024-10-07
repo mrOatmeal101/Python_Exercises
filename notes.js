@@ -286,22 +286,19 @@
 // True
 
 // Section 22 While Loops
-// 
+// Notes on test.py
 
 // Section 23 For Loops
-// 
+// Notes on test.py
 
 // Section 24 Ranges
-// 
+// Notes on test.py
 
 // Section 25 Python Functions
-// 
+// Notes on test.py
 
 // Section 26 Function Arguments
-// 
+// Notes on test.py
 
 // Section 27 Comments and docstrings
-// 
-
-// Section 28 Python Syntax Exercise
-// 
+// Notes on test.py

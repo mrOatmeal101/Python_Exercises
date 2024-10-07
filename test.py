@@ -149,25 +149,58 @@
 # # Out[14]: 'must use an integers'
 
 # Section 26 Function Arguments
-# 
+# def add_numbers(a, b):
+#     sum = a + b
+#     print("doing math!")
+#     return sum
+# Functions that don’t explicitly return return None
+
+# Can pass arguments by name:
+
+# def order_pizza(size, flavor):
+#     print(f"{size} pizza with {flavor} topping")
+
+# order_pizza("large", "mushroom")
+
+# order_pizza(size="small", flavor="sausage")
+
+# # Same thing
+# order_pizza(flavor="sausage", size="small")
+# Can provide defaults for parameters:
+
+# def send_invite(name, city="SF", state="California"):
+#     print(f"mailing invitation to {city}, {state}")
+
+# send_invite("Jenny", "Portland", "Oregon")
+
+# send_invite("Joel")
+# Providing too many/too few arguments is an error (in JS, this is ignored / becomes undefined):
+
+# def add_three_numbers(a, b, c):
+#     return a + b + c
+
+# add_three_numbers(10, 20, 30)       # 60, yay!
+
+# add_three_numbers(10, 20)           # error!
+
+# add_three_numbers(10, 20, 30, 40)   # error!
 
 # Section 27 Comments and docstrings
-# 
+# #: rest of line is comment (use to explain complex code)
+# String as very first thing in file/function is “docstring”
+# Use to document what the function/file does
+# Shown when you ask for help(some_function)
+# def add_limited_numbers(a, b):
+#     """Add two numbers, making sure sum caps at 100."""
+
+#     sum = a + b
+
+#     # If this required explanation, comment like this
+
+#     if sum > 100:
+#         sum = 100
+
+#     return sum
 
 # Section 28 Python Syntax Exercise
-def sum_nums(nums):
-    """Given list of numbers, return sum of those numbers.
 
-    For example:
-      sum_nums([1, 2, 3, 4])
-
-    Should return (not print):
-      10
-    """  
-
-    # Python has a built-in function `sum()` for this, but we don't
-    # want you to use it. Please write this by hand.
-
-    # YOUR CODE HERE
-
-print("sum_nums returned", sum_nums([1, 2, 3, 4]))
