@@ -15,13 +15,27 @@
 # Step Two: Starting On Your Own
 
 # count_up.py
-def count_up(start, stop):
-    """Print all numbers from start up to and including stop.
+# def count_up(start, stop):
+#     """Print all numbers from start up to and including stop.
+#     For example:
+#         count_up(5, 7)
+#    should print: 5 6 7 """
+#     # YOUR CODE HERE
+#     return list(range(start, stop+1, 1))
+
+# print(count_up(5, 7))
+
+# in_range.py
+def in_range(nums, lowest, highest):
+    """Print numbers inside range.
+    - nums: list of numbers
+    - lowest: lowest number to print
+    - highest: highest number to print
     For example:
-        count_up(5, 7)
-   should print: 5 6 7 """
+      in_range([10, 20, 30, 40], 15, 30)
+    should print: 20 fits 30 fits"""
+
     # YOUR CODE HERE
-    return list(range(start, stop+1, 1))
 
-print(count_up(5, 7))
 
+in_range([10, 20, 30, 40, 50], 15, 30)   
