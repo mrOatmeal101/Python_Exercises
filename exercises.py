@@ -87,8 +87,16 @@ def convert_temp(unit_in, unit_out, temp):
     For example: convert_temp("c", "f", 0)  =>  32.0 / convert_temp("f", "c", 212) => 100.0
     """
     # YOUR CODE HERE
-    
-
+    if unit_in == 'c' and unit_out == 'f':
+        cel_to_far = temp * (9/5) + 32
+        return f'new temp is {cel_to_far}'
+    if unit_in == "f" and unit_out == "c":
+        far_to_cel = (temp - 32) * (5/9)
+        return f'new temp is {far_to_cel}'
+    if unit_in == unit_out:
+        return f'the temp is still {temp}'
+    else:
+        return 'invalid unit'
 
 print("c", "f", 0, convert_temp("c", "f", 0), "should be 32.0")
 print("f", "c", 212, convert_temp("f", "c", 212), "should be 100.0")
