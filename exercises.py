@@ -63,3 +63,16 @@
 # print("sum_nums returned", sum_nums([1, 2, 3, 4]))
 
 # any7.py
+def any7(nums):
+    """Are any of these numbers a 7? (True/False)"""
+
+    # YOUR CODE HERE
+    for num in nums: # creating a for in loop: making variable num which is storing the individual elements in the list nums.
+      if 7 in nums: # using if statement to determine if the integer 7, then using in keyword, to check an see if the integer 7 is in the list nums
+        return True # return true if it is in the list 
+      else:
+        return False # return false if it is not in the list
+
+print("should be true", any7([1, 2, 7, 4, 5]))
+print("should be false", any7([1, 2, 4, 5]))
+
