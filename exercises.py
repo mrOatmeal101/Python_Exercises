@@ -45,21 +45,21 @@
 # print(in_range([10, 20, 30, 40, 50], 15, 30))
 
 # sum.py
-def sum_nums(nums):
-    """Given list of numbers, return sum of those numbers.
-    For example:
-    sum_nums([1, 2, 3, 4])
-    Should return (not print): 10
-    """  
-    # Python has a built-in function `sum()` for this, but we don't
-    # want you to use it. Please write this by hand.
+# def sum_nums(nums):
+#     """Given list of numbers, return sum of those numbers.
+#     For example:
+#     sum_nums([1, 2, 3, 4])
+#     Should return (not print): 10
+#     """  
+#     # Python has a built-in function `sum()` for this, but we don't
+#     # want you to use it. Please write this by hand.
 
-    # YOUR CODE HERE
-    total = 0 # setting variable named total to zero to store the values of total + num as the for in loop runs 
-    for num in nums: # for variable named num loop over the list nums and store each individual element in num
-      total += num # setting the variable total = total + num 
-    return total
+#     # YOUR CODE HERE
+#     total = 0 # setting variable named total to zero to store the values of total + num as the for in loop runs 
+#     for num in nums: # for variable named num loop over the list nums and store each individual element in num
+#       total += num # setting the variable total = total + num 
+#     return total
 
-print("sum_nums returned", sum_nums([1, 2, 3, 4]))
+# print("sum_nums returned", sum_nums([1, 2, 3, 4]))
 
-
+# any7.py
