@@ -26,22 +26,24 @@
 # print(count_up(5, 7))
 
 # in_range.py
-def in_range(nums, lowest, highest):
-    """Print numbers inside range.
-    - nums: list of numbers
-    - lowest: lowest number to print
-    - highest: highest number to print
-    For example:
-      in_range([10, 20, 30, 40], 15, 30)
-    should print: 20 fits 30 fits"""
+# def in_range(nums, lowest, highest):
+#     """Print numbers inside range.
+#     - nums: list of numbers
+#     - lowest: lowest number to print
+#     - highest: highest number to print
+#     For example:
+#       in_range([10, 20, 30, 40], 15, 30)
+#     should print: 20 fits 30 fits"""
 
-    # YOUR CODE HERE
-    for num in nums:
-        first_num = nums[0]
-        last_num = nums[-1]
-        if first_num < lowest and last_num > highest:
-            return f"{lowest} fits {highest} fits"
+#     # YOUR CODE HERE
+#     for num in nums:
+#         first_num = nums[0]
+#         last_num = nums[-1]
+#         if first_num < lowest and last_num > highest:
+#             return f"{lowest} fits {highest} fits"
         
-print(in_range([10, 20, 30, 40, 50], 15, 30))
+# print(in_range([10, 20, 30, 40, 50], 15, 30))
+
+# sum.py
 
 
