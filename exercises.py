@@ -120,15 +120,15 @@
 # start with one of those letters. For example: this should print "HELLO", "HEY", "YO", and "YES"
 # print_upper_words(["hello", "hey", "goodbye", "yo", "yes"], must_start_with={"h", "y"})
 
-def print_upper_words(words_in): # function called print_upper_words(input variable with the name words_in)
-    for words in words_in: # using for in loop to loop over elements in the input list 
-        for letters in words: # nested for in loop to loop over the individual letters in the input elements
-            if words[0] == 'e' or words[0] == 'y' or words[0] == 'E' or words[0] == 'Y': # if statement to see if the index value of 0 is equal to the string 'e' and if so exacute the following
-                print(words.upper()) # print the whole input element from word
-                break      # added break or it will loop over 12 times for the 1st input and will print the element 3 times. 
+# def print_upper_words(words_in): # function called print_upper_words(input variable with the name words_in)
+#     for words in words_in: # using for in loop to loop over elements in the input list 
+#         for letters in words: # nested for in loop to loop over the individual letters in the input elements
+#             if words[0] == 'e' or words[0] == 'y' or words[0] == 'E' or words[0] == 'Y': # if statement to see if the index value of 0 is equal to the string 'e' and if so exacute the following
+#                 print(words.upper()) # print the whole input element from word
+#                 break      # added break or it will loop over 12 times for the 1st input and will print the element 3 times. 
 
-print_upper_words(["hello", "hey", "exercise", "goodbye", "yo", "Yes"])
-print_upper_words(["hello", "Eggcellent", "exercise", "goodbye", "yo", "examples"])
+# print_upper_words(["hello", "hey", "exercise", "goodbye", "yo", "Yes"])
+# print_upper_words(["hello", "Eggcellent", "exercise", "goodbye", "yo", "examples"])
 
 
 
