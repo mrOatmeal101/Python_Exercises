@@ -77,29 +77,47 @@
 # print("should be false", any7([1, 2, 4, 5]))
 
 # convert.py
-def convert_temp(unit_in, unit_out, temp):
-    """Convert farenheit <-> celsius and return results.
-    - unit_in: either "f" or "c" 
-    - unit_out: either "f" or "c"
-    - temp: temperature (in f or c, depending on unit_in)
-    Return results of conversion, if any.
-    If unit_in or unit_out are invalid, return "Invalid unit [UNIT_IN]".
-    For example: convert_temp("c", "f", 0)  =>  32.0 / convert_temp("f", "c", 212) => 100.0
-    """
-    # YOUR CODE HERE
-    if unit_in == 'c' and unit_out == 'f':
-        cel_to_far = temp * (9/5) + 32
-        return f'new temp is {cel_to_far}'
-    if unit_in == "f" and unit_out == "c":
-        far_to_cel = (temp - 32) * (5/9)
-        return f'new temp is {far_to_cel}'
-    if unit_in == unit_out:
-        return f'the temp is still {temp}'
-    else:
-        return 'invalid unit'
+# def convert_temp(unit_in, unit_out, temp):
+#     """Convert farenheit <-> celsius and return results.
+#     - unit_in: either "f" or "c" 
+#     - unit_out: either "f" or "c"
+#     - temp: temperature (in f or c, depending on unit_in)
+#     Return results of conversion, if any.
+#     If unit_in or unit_out are invalid, return "Invalid unit [UNIT_IN]".
+#     For example: convert_temp("c", "f", 0)  =>  32.0 / convert_temp("f", "c", 212) => 100.0
+#     """
+#     # YOUR CODE HERE
+#     if unit_in == 'c' and unit_out == 'f':
+#         cel_to_far = temp * (9/5) + 32
+#         return f'new temp is {cel_to_far}'
+#     if unit_in == "f" and unit_out == "c":
+#         far_to_cel = (temp - 32) * (5/9)
+#         return f'new temp is {far_to_cel}'
+#     if unit_in == unit_out:
+#         return f'the temp is still {temp}'
+#     else:
+#         return 'invalid unit'
 
-print("c", "f", 0, convert_temp("c", "f", 0), "should be 32.0")
-print("f", "c", 212, convert_temp("f", "c", 212), "should be 100.0")
-print("z", "f", 32, convert_temp("z", "f", 32), "should be Invalid unit z")
-print("c", "z", 32, convert_temp("c", "z", 32), "should be Invalid unit z")
-print("f", "f", 75.5, convert_temp("f", "f", 75.5), "should be 75.5")
+# print("c", "f", 0, convert_temp("c", "f", 0), "should be 32.0")
+# print("f", "c", 212, convert_temp("f", "c", 212), "should be 100.0")
+# print("z", "f", 32, convert_temp("z", "f", 32), "should be Invalid unit z")
+# print("c", "z", 32, convert_temp("c", "z", 32), "should be Invalid unit z")
+# print("f", "f", 75.5, convert_temp("f", "f", 75.5), "should be 75.5")
+
+# Step Two: Starting On Your Own
+# Do this work in a new file, words.py.
+# 1. For a list of words, print out each word on a separate line, but in all uppercase. 
+# How can you change a word to uppercase? Ask Python for help on what you can do with strings!
+
+
+# 2. Turn that into a function, print_upper_words. Test it out. (Don’t forget to add a docstring to your function!)
+
+
+# 3. Change that function so that it only prints words that start with the letter ‘e’ (either upper or lowercase).
+
+
+# 4. Make your function more general: you should be able to pass in a set of letters, and it only prints words that 
+# start with one of those letters. For example: this should print "HELLO", "HEY", "YO", and "YES"
+# print_upper_words(["hello", "hey", "goodbye", "yo", "yes"],
+#                    must_start_with={"h", "y"})
+
