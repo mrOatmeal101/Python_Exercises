@@ -108,7 +108,11 @@
 # Do this work in a new file, words.py.
 # 1. For a list of words, print out each word on a separate line, but in all uppercase. 
 # How can you change a word to uppercase? Ask Python for help on what you can do with strings!
+def print_upper_words(words_in):
+    for words in words_in:
+        print (words.upper())
 
+print_upper_words(["hello", "hey", "goodbye", "yo", "yes"])
 
 # 2. Turn that into a function, print_upper_words. Test it out. (Don’t forget to add a docstring to your function!)
 
